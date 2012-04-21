@@ -1,0 +1,88 @@
+/* ******* TAGS ******* */
+
+@font-face {
+	font-family: Mistral;
+	src:local("Mistral"),
+		url(../font/MISTRAL.TTF);
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	min-height: 600px;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	position: relative;
+}
+
+.bubble-border {
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+}
+.bubble {
+	background-color: #fff;
+	/*box-shadow: 0 4px 14px rgba(255, 255, 255, 0.4) inset, 0 -10px 5px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0,0,0,0.2);*/
+	position: absolute;
+}
+
+.flower {
+	position:absolute;
+}
+.flower > .inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.flower > .inner .center {
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.flower .block {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.flower .block .inner {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fake-flower {
+	width: 293px;
+	height: 288px;
+	background: url(../img/flower.png);
+	position: absolute;
+}
+
+.title {
+	width: 100%;
+	font-size: 90px;
+	font-family: Mistral, "Comic Sans MS", cursive;
+	text-align: center;
+	position: absolute;
+	left: 0;
+}
+.title span {
+	color: #fff;
+}
+
+.all-fake {
+	width: 500px;
+	height: 500px;
+	background: url(../img/fake.png);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -250px;
+}
